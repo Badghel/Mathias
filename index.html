@@ -11,11 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- FontAWESOME -->
+    <script src="https://kit.fontawesome.com/a560408a10.js" crossorigin="anonymous"></script>
 </head>
+
 
 <body>
     <header class="header">
-        <div class="header__menu">
+        <div class="header__menu " id="active">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="active" id="menu">
+            <i class="fas fa-chevron-right arrow" id="atras"></i>
+            <p class="active__text">Sobre mi</p>
+            <p class="active__text">Educacion</p>
+            <p class="active__text">Estudios</p>
+            <p class="active__text">Experiencia</p>
+            <p class="active__text">Habilidades Extras</p>
+            <p class="active__text">Idiomas</p>
+            <p class="active__text">Contacto</p>
+            <p class="active__text">Linkedin</p>
             
         </div>
         <div>
@@ -29,17 +44,18 @@
     <main class="main">
         <section class="section__card">
             <div class="section__info">
-                <h2 class="section__h2">Sobre mi</h2>
+                <h2 class="section__h2"><i class="fas fa-address-card icon_about"></i></h2>
+                
                 <p class="section__p">
                 Soy un joven en busca de su primera experiencia laboral en una
                 empresa que me permita crecer personal y profesionalmente.
-                Comprometido con mi deber y aptitud para enfrentar los cambios
+                Comprometido con mi deber y aptitud para enfrentar los cambios.
                 </p>
             </div>
         </section>
         <section class="section__card">
             <div class="section__info">
-                <h2 class="section__h2">Formacion Academica</h2>
+                <h2 class="section__h2"><i class="fas fa-graduation-cap"></i></h2>
                 <li class="section__li">
                     Secundario Completo 2012-2017
                    <span class="section__li__span">Instituto Pablo Antonio Pizzurno</span>
@@ -50,14 +66,14 @@
         </section>
         <section class="section__card">
             <div class="section__info">
-                <h2 class="section__h2">Formacion Complementaria</h2>
-                <li class="section__li__cp">
+                <h2 class="section__h2"><i class="fas fa-book"></i></h2>
+                <li class="section__li">
                     Soporte de Tecnologías de la Información de Google a cargo de
                     Crece con Google en Coursera. <span class="section__li__span">Certificado obtenido el 15 de marzo de 2021
                         </span>
                 </li>
                 <br>
-                <li class="section__li__cp">
+                <li class="section__li">
                     Curso de Atención al Cliente – Recepción – Call Center en Capacitas
                     Ministerio de Desarrollo Productivo de la Nación. Certificado
                     obtenido el  <span class="section__li__span">14 de octubre de 2020</span>
@@ -66,11 +82,11 @@
         </section>
         <section class="section__card">
             <div class="section__info">
-                <h2 class="section__h2">Experiencia</h2>
-                <li class="section__li__cp">
+                <h2 class="section__h2"><i class="fas fa-folder-open"></i></h2>
+                <li class="section__li">
                     Trabajos como FreeLancer diseñando imágenes publicitarias para Trajedled.com.  <span class="section__li__span">2018.</span>
                 </li>
-                <li class="section__li__cp">
+                <li class="section__li">
                     Manejo de redes sociales (CM) para startup propia. <span class="section__li__span">2017.</span>
                 </li>
             
@@ -78,31 +94,48 @@
         </section>
         <section class="section__card">
             <div class="section__info">
-                <h2 class="section__h2">Habilidades Extras</h2>
-                <li class="section__li__cp">
+                <h2 class="section__h2"><i class="fas fa-star"></i></h2>
+                <li class="section__li">
                     Armado y reparación de PC.
                 </li>
-                <li class="section__li__cp">
+                <li class="section__li">
                     Uso de paquete Office.
                 </li>
-                <li class="section__li__cp">
+                <li class="section__li">
                     Edición de imagen y video.
                 </li>
             </div>
         </section>
         <section class="section__card">
             <div class="section__info">
-                <h2 class="section__h2">Idiomas</h2>
-                <li class="section__li__cp">
+                <h2 class="section__h2"><i class="fas fa-user-alt"></i></h2>
+                <li class="section__li">
                    Español: <span class="section__li__span">Nativo</span>
                 </li>
-                <li class="section__li__cp">
+                <li class="section__li">
                     Inglés: <span class="section__li__span">A2</span>
                  </li>
               
             </div>
         </section>
+        <section class="section__card">
+            <div class="section__info">
+                <h2 class="section__h2"><i class="fas fa-envelope"></i></h2>
+                <p class="section__p">
+                    Cel: +54 9 11 3922-0539
+                </p>
+              
+            </div>
+        </section>
+        <section class="section__card">
+            <div class="section__info">
+                <a href="https://www.linkedin.com/in/mathias-andino/" target="_blank"><h2 class="section__h2 linkedin"><i class="fab fa-linkedin-in"></i></h2></a>
+
+              
+            </div>
+        </section>
     </main>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
