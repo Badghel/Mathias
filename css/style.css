@@ -5,7 +5,9 @@
     --bg-transparent: rgba(0, 0, 0, 0.274);
     --bg-gray:#000000e8;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -74,7 +76,6 @@ body{
    
 }
 .active__text{
-    color: #fff;
     text-align: center;
     margin-bottom: 30px;
     font-size: 20px;
@@ -86,8 +87,14 @@ body{
     right: 0;
 }
 .active__text:nth-of-type(1){
-    margin-top: 50px;
+    margin-top: 100px;
 }
+
+.menu__link{
+    text-decoration: none;
+    color: var(--font-primary);
+}
+
 /* Main Y section */
 .main{
     height: 100vh;
