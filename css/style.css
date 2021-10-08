@@ -1,0 +1,106 @@
+:root{
+    --bg-purple:#000;
+    --bg-grey:#fff;
+    --font-primary: #fff;
+    --bg-transparent: rgba(0, 0, 0, 0.315);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-grey);
+    
+}
+/* Header */
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-purple);
+    align-items: center;
+    
+}
+.header__img{
+    background-image: url(../img/matias2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+
+}
+.header__span{
+    color: var(--font-primary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.header__span2{
+    color: var(--font-primary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    text-shadow: 1px 1px 2px black;
+}
+.header__h1{
+    text-align: center;
+    font-size: 25px;
+    color: var(--font-primary);
+    margin-bottom: 5px;
+}
+/* Main Y section */
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+.section__card{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 5px;
+    background: rgb(247, 247, 247);
+    border-top: 1px solid var(--bg-transparent);
+    border-bottom: 1px solid var(--bg-transparent);
+    border-radius: 5px;
+  /*   box-shadow: 0 0 6px rgb(0 0 0 / 50%); */
+    margin-bottom: 20px;
+}
+.section__card:nth-child(1){
+    margin-top: 20px;
+}
+.section__info{
+    margin: 0 5px 0 5px;
+}
+.section__h2{
+    font-size: 20px;
+    text-align: center;
+}
+.section__p{
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
+}
+.section__li{
+    font-size: 13px;
+   text-align: center;
+   list-style: none;
+}
+
+.section__li__span{
+    font-weight: bold;
+}
+.section__li__cp{
+    font-size: 13px;
+    text-align: justify;
+   
+ }
+
+
+
