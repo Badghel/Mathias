@@ -1,9 +1,10 @@
 :root{
-    --bg-purple:#000;
+    --bg-black:#000;
     --bg-grey:#fff;
     --font-primary: #fff;
     --bg-transparent: rgba(0, 0, 0, 0.274);
     --bg-gray:#000000e8;
+    --font--secondary: #0000ff;
 }
 html{
     scroll-behavior: smooth;
@@ -23,12 +24,15 @@ body{
 .header{
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-purple);
+    background-color: var(--bg-black);
     align-items: center;
-    
 }
+.header__nav{
+    display: none;
+}
+
+
 .header__img{
-    background-image: url(../img/matias2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,6 +67,68 @@ body{
     right: 0;
     font-size: 50px;
 }
+/* QUERYS DEL HEADER Y NAV. */
+@media (min-width:900px){
+    /* BOTON */
+    .header__menu{
+        display: none;
+        
+    }
+    /* HEADER */
+    .header{
+        height: 100vh;
+       justify-content: center;
+        background-image: url(/img/wp4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .header__img{
+        height: 250px;
+        margin: 0;
+    }
+    .header__h1{
+        font-size: 50px;
+        color: var(--font-primary);
+        text-shadow: rgb(0, 0, 0) 5px 3px;
+    }
+    .header__span{
+        font-size: 30px;
+        text-shadow: rgb(0, 0, 0) 3px 0px;
+    }
+    .header__span2{
+        font-size: 25px;
+    }
+    /* NAV */
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      /* background-color: var(--bg-black); */
+        background-image: url(/img/wp4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+       padding-top: 10px;
+    }
+   .nav__links >a{
+       color: var(--font-primary);
+       font-weight: bold;
+       padding: 0 10px;
+       text-decoration: none; 
+       transition: all 0.5s;
+       font-size: 20px;
+       
+   }
+   .nav__links >a:hover{
+       color: var(--font--secondary);
+   }
+
+}
+
+
 /* BOTON */
 .disable{
     display: none;
@@ -72,8 +138,8 @@ body{
     background: var(--bg-gray);
     height: 100vh;
     width: 100vw;
+    animation: Izquierda 0.4s;
     display: none;
-   
 }
 .active__text{
     text-align: center;
@@ -93,21 +159,26 @@ body{
 .menu__link{
     text-decoration: none;
     color: var(--font-primary);
+    user-select: none;
 }
+@keyframes Izquierda {
+    0%{
+        transform: translateX(500px);
+    }
+   
+}
+
 
 /* Main Y section */
 .main{
     height: 100vh;
-    width: 100vw;
 }
 .section__card{
     display: flex;
     flex-direction: column;
     width: 75vw;
     margin: 0 auto;
-    margin-top: 50px;    
-    border-radius: 5px;
-  /*   box-shadow: 0 0 6px rgb(0 0 0 / 50%); */
+    margin-top: 50px;  
     margin-bottom: 50px;
 }
 .section__card:nth-child(1){
@@ -144,6 +215,23 @@ body{
 .linkedin{
     color: #000;
 }
-
-
-
+/* Querys */
+@media (min-width:900px){
+    .section__card{
+    width: 50vw;
+    }
+    .section__p{
+        font-size: 30px;
+    }
+    .section__li{
+        font-size: 20px;
+    }
+    .row{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .linkedin_p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
