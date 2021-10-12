@@ -11,10 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <meta name="google-site-verification" content="G0BckS4FkJjYZSkirj1KXRHEubN6By-_olz9eU5pSig" />
     <!-- FontAWESOME -->
     <script src="https://kit.fontawesome.com/a560408a10.js" crossorigin="anonymous"></script>
-    
 </head>
 
 
@@ -22,16 +20,17 @@
   
     <nav class="header__nav">
         <div class="nav__links">
-            <a href="#sobremi">Sobre mi</a>
-            <a href="#educacion">Educacion</a>
-            <a href="#estudios">Estudios</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#sobremi" >Sobre mi</a>
+            <a href="#educacion" >Educacion</a>
+            <a href="#estudios" >Estudios</a>
+            <a href="#contacto" >Contacto</a>
         </div>
     </nav>
+    <div class="header__menu " id="active">
+        <i class="fas fa-bars"></i>
+    </div>
     <header class="header">
-        <div class="header__menu " id="active">
-            <i class="fas fa-bars"></i>
-        </div>
+        
         <div class="active" id="menu">
             <i class="fas fa-chevron-right arrow" id="atras"></i>
             <p class="active__text"><a href="#sobremi" class="menu__link">Sobre mi</a></p>
@@ -41,7 +40,6 @@
             <p class="active__text"><a href="#extras" class="menu__link">Habilidades Extras</a></p>
             <p class="active__text"><a href="#idiomas" class="menu__link">Idiomas</a></p>
             <p class="active__text"><a href="#contacto" class="menu__link">Contacto</a></p>
-            <p class="active__text"><a href="#linkedin" class="menu__link">Linkedin</a></p>
             
         </div>
         <div>
@@ -55,7 +53,8 @@
     <main class="main">
         <section class="section__card" id="sobremi">
             <div class="section__info">
-                <h2 class="section__h2"><i class="fas fa-address-card icon_about"></i></h2>
+                <!-- <h2 class="section__h2"><i class="fas fa-address-card icon_about"></i></h2> -->
+                <h2 class="section__h2">Sobre mi</h2>
                 
                 <p class="section__p">
                 Soy un joven en busca de su primera experiencia laboral en una
@@ -66,7 +65,7 @@
         </section>
         <section class="section__card" id="educacion">
             <div class="section__info">
-                <h2 class="section__h2"><i class="fas fa-graduation-cap"></i></h2>
+                <h2 class="section__h2">Educacion</h2>
                 <ul>
                 <li class="section__li">
                     Secundario Completo 2012-2017
@@ -79,7 +78,7 @@
         </section>
         <section class="section__card" id="estudios">
             <div class="section__info">
-                <h2 class="section__h2"><i class="fas fa-book"></i></h2>
+                <h2 class="section__h2">Estudios</h2>
             <ul>
                  <li class="section__li">
                     Soporte de Tecnologías de la Información de Google a cargo de
@@ -99,7 +98,7 @@
         </section>
         <section class="section__card" id="experiencia">
             <div class="section__info">
-                <h2 class="section__h2"><i class="fas fa-folder-open"></i></h2>
+                <h2 class="section__h2">Experiencia</h2>
                <ul>
                     <li class="section__li">
                     Trabajos como FreeLancer diseñando imágenes publicitarias para Trajedled.com.  <span class="section__li__span">2018.</span>
@@ -115,7 +114,7 @@
         </section>
         <section class="section__card" id="extras">
             <div class="section__info">
-                <h2 class="section__h2"><i class="fas fa-star"></i></h2>
+                <h2 class="section__h2">Habilidades</h2>
                 
             <ul>
                 <li class="section__li">
@@ -136,7 +135,7 @@
         </section>
         <section class="section__card" id="idiomas">
             <div class="section__info">
-                <h2 class="section__h2"><i class="fas fa-user-alt"></i></h2>
+                <h2 class="section__h2">Idiomas</h2>
             <ul>
                 <li class="section__li">
                    Español: <span class="section__li__span">Nativo</span>
@@ -151,6 +150,8 @@
             </div>
         </section>
         <h3 class="section__h2" id="contacto">Contacto</h3>
+    </main>
+    <footer class="site__footer">
         <section class="section__card row" id="linkedin">
             <div class="section__info">
                 <a href="https://www.linkedin.com/in/mathias-andino/" target="_blank"><h2 class="section__h2 linkedin"><i class="fab fa-linkedin-in"></i></h2></a>
@@ -160,8 +161,12 @@
                 <h2 class="section__h2"><i class="fas fa-envelope"></i></h2>
                 <p class="section__p linkedin_p">Mail</p>
             </div>
+            <div class="section__info">
+                <a href="https://wa.link/vbvovg" target="_blank"><h2 class="section__h2 linkedin"><i class="fab fa-whatsapp"></i></h2></a>
+                <p class="section__p linkedin_p">Whatsapp</p>
+            </div>
         </section>
-    </main>
+    </footer>
     <script src="js/js.js"></script>
 </body>
 
