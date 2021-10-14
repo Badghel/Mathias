@@ -23,11 +23,10 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  background-image: url(../img/wp4.jpg);
+  background-image: url(../img/wp4.webp);
   align-items: center;
   justify-content: center;
-  background-position: center;
-
+  background-position: center;  
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -103,7 +102,7 @@ body {
     align-items: flex-end;
     justify-items: center;
     /* background-color: var(--bg-black); */
-    background-image: url(../img/wp4.jpg);
+    background-image: url(../img/wp4.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
