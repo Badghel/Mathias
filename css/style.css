@@ -36,11 +36,13 @@ body {
 }
 
 .header__img {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 150px;
+  width: 195px;
+  height: 200px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .header__span {
   color: var(--font-primary);
@@ -81,6 +83,7 @@ body {
   }
   .header__img {
     height: 250px;
+    width: 270px;
     margin: 0;
   }
   .header__h1 {
@@ -163,6 +166,12 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.section__cv{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .section__card:nth-child(1) {
   margin-top: 20px;
 }
