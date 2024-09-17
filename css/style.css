@@ -1,106 +1,252 @@
-:root{
-    --bg-purple:#000;
-    --bg-grey:#fff;
-    --font-primary: #fff;
-    --bg-transparent: rgba(0, 0, 0, 0.315);
+:root {
+  --bg-black: #000;
+  --bg-grey: #fff;
+  --font-primary: #fff;
+  --bg-transparent: rgba(0, 0, 0, 0.274);
+  --bg-gray: #000000e8;
+  --font--secondary: #0000ff;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: var(--bg-grey);
-    
+body {
+  background-color: var(--bg-grey);
 }
 /* Header */
-.header{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-purple);
-    align-items: center;
-    
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/wp4.webp);
+  align-items: center;
+  justify-content: center;
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
-.header__img{
-    background-image: url(../img/matias2.jpg);
+.header__nav {
+  display: none;
+}
+
+.header__img {
+  width: 195px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.header__span {
+  color: var(--font-primary);
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.header__h1 {
+  text-align: center;
+  font-size: 20px;
+  color: var(--font-primary);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.header__menu {
+  color: #000;
+  position: fixed;
+  right: 0;
+  font-size: 50px;
+}
+/* QUERYS DEL HEADER Y NAV. */
+@media (min-width: 900px) {
+  /* BOTON */
+  .header__menu {
+    display: none;
+  }
+  /* HEADER */
+  .header {
+    height: 100vh;
+    justify-content: center;
+    background-image: url(../img/wp4.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 10px;
-
-}
-.header__span{
+    background-attachment: fixed;
+  }
+  .header__img {
+    height: 250px;
+    width: 270px;
+    margin: 0;
+  }
+  .header__h1 {
+    font-size: 50px;
     color: var(--font-primary);
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-.header__span2{
-    color: var(--font-primary);
-    font-weight: bold;
-    text-align: center;
-    font-size: 17px;
-    text-shadow: 1px 1px 2px black;
-}
-.header__h1{
-    text-align: center;
+    text-shadow: rgb(0, 0, 0) 5px 3px;
+  }
+  .header__span {
+    font-size: 30px;
+    text-shadow: rgb(0, 0, 0) 3px 0px;
+  }
+  .header__span2 {
     font-size: 25px;
-    color: var(--font-primary);
-    margin-bottom: 5px;
-}
-/* Main Y section */
-.main{
-    height: 100vh;
-    width: 100vw;
-}
-.section__card{
+  }
+  /* NAV */
+  .header__nav {
     display: flex;
     flex-direction: column;
-    width: 75vw;
-    margin: 0 auto;
-    margin-top: 5px;
-    background: rgb(247, 247, 247);
-    border-top: 1px solid var(--bg-transparent);
-    border-bottom: 1px solid var(--bg-transparent);
-    border-radius: 5px;
-  /*   box-shadow: 0 0 6px rgb(0 0 0 / 50%); */
-    margin-bottom: 20px;
-}
-.section__card:nth-child(1){
-    margin-top: 20px;
-}
-.section__info{
-    margin: 0 5px 0 5px;
-}
-.section__h2{
-    font-size: 20px;
-    text-align: center;
-}
-.section__p{
-    font-size: 13px;
-    font-weight: 400;
-    text-align: justify;
-}
-.section__li{
-    font-size: 13px;
-   text-align: center;
-   list-style: none;
-}
-
-.section__li__span{
+    align-items: flex-end;
+    justify-items: center;
+    /* background-color: var(--bg-black); */
+    background-image: url(../img/wp4.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10px;
+  }
+  .nav__links > a {
+    color: var(--font-primary);
     font-weight: bold;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 20px;
+  }
+  .nav__links > a:hover {
+    color: var(--font--secondary);
+  }
 }
-.section__li__cp{
-    font-size: 13px;
-    text-align: justify;
-   
- }
 
+/* BOTON */
+.disable {
+  display: none;
+}
+.active {
+  position: fixed;
+  background: var(--bg-gray);
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+.active__text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.arrow {
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+}
+.active__text:nth-of-type(1) {
+  margin-top: 100px;
+}
 
+.menu__link {
+  text-decoration: none;
+  color: var(--font-primary);
+  user-select: none;
+}
+/* Main Y section */
 
+.section__card {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section__cv{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.section__card:nth-child(1) {
+  margin-top: 20px;
+}
+.section__info {
+  margin: 0 5px 0 5px;
+}
+.section__h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.section__p {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+.section__li {
+  font-size: 13px;
+  text-align: center;
+  list-style: none;
+}
+
+.section__li__span {
+  font-weight: bold;
+}
+.section__li__cp {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.linkedin {
+  color: #000;
+}
+/* Querys */
+@media (min-width: 900px) {
+  .section__card {
+    width: 50vw;
+  }
+  .section__p {
+    font-size: 30px;
+  }
+  .section__li {
+    font-size: 20px;
+  }
+  .row {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .linkedin_p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+/* FOOTER */
+.site__footer .section__card{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+@keyframes Izquierda {
+    0% {
+      transform: translateX(500px);
+      -webkit-transform: translateX(500px);
+      -moz-transform: translateX(500px);
+      -ms-transform: translateX(500px);
+      -o-transform: translateX(500px);
+}
+  }
+@keyframes derecha{
+    100%{
+        transform: translateX(800px);
+        -webkit-transform: translateX(800px);
+        -moz-transform: translateX(800px);
+        -ms-transform: translateX(800px);
+        -o-transform: translateX(800px);
+}
+}
